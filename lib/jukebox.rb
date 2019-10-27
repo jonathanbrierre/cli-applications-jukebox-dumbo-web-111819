@@ -29,7 +29,7 @@ end
 
 def list (songs)
   this = []
-  songs.each_with_index {|item,index| this << "[#{index+ 1}]. #{item}"}
+  songs.each_with_index {|item,index| this << "#{index+ 1}. #{item}"}
   pp this 
 end 
 
