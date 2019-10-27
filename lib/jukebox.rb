@@ -8,6 +8,7 @@
  
 # puts say_hello(users_name)
 require 'pry'
+require 'pp'
 def help 
 puts "I accept the following commands:"
 puts "- help : displays this help message"
@@ -29,7 +30,7 @@ end
 def list (songs)
   this = {}
   songs.each_with_index {|item,index| this[index +1] = item}
-  puts  this 
+  pp this 
 end 
 
 def exit_jukebox
