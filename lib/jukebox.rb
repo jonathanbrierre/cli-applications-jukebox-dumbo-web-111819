@@ -27,9 +27,7 @@ def play(songs)
 end 
 
 def list (songs)
-  list_of_songs = songs.each_with_index
-  puts list_of_songs
-  binding.pry
+  songs.each_with_index {|item,index| this[index +1] = item}
 end 
 
 def exit_jukebox
