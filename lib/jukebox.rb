@@ -29,6 +29,7 @@ end
 def list (songs)
   list_of_songs = songs.each_with_index
   puts list_of_songs
+  binding.pry
 end 
 
 def exit_jukebox
