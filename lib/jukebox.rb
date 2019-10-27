@@ -23,7 +23,7 @@ def play(songs)
   valid_inputs = [1..9]
   if songs.include?(song)  
     puts "Playing #{song}"
-  elsif song.to_i == valid_inputs
+  elsif valid_inputs.include?(song.to_i)
     puts "Playing #{songs[song.to_i - 1]}"
   else
     puts "Invalid input, please try again"
