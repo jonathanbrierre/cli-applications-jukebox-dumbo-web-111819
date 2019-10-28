@@ -33,7 +33,7 @@ end
 def list (songs)
   this = []
   songs.each_with_index {|item,index| this << "#{index+ 1}. #{item}"}
-  puts this.join(' ')
+  puts %w[this]
 end 
 
 def exit_jukebox
