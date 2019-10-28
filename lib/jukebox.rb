@@ -25,7 +25,7 @@ end
 def list(songs)
   this = []
   songs.each_with_index {|item,index| this << "#{index+ 1}. #{item}"}
-  puts this.join.join
+  puts this 
 end 
 
 def exit_jukebox
