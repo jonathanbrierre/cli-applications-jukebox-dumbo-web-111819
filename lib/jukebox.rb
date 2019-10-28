@@ -1,12 +1,4 @@
-# Add your code here
-# def say_hello(name)
-#   "Hi #{name}!"
-# end
- 
-# puts "Enter your name:"
-# users_name = gets.strip
- 
-# puts say_hello(users_name)
+
 require 'pry'
 require 'pp'
 def help 
@@ -33,7 +25,7 @@ end
 def list(songs)
   this = []
   songs.each_with_index {|item,index| this << "#{index+ 1}. #{item}"}
-  puts this
+  puts this.join.join
 end 
 
 def exit_jukebox
