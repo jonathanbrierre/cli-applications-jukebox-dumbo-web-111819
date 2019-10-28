@@ -60,7 +60,7 @@ def run(songs)
         play(songs)
       end 
     end
-    # puts "Please enter a command:"
+    
     command = gets.strip
     
     break if command == "exit"
