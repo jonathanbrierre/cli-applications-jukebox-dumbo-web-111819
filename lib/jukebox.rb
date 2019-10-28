@@ -23,9 +23,9 @@ def play(songs)
 end 
 
 def list(songs)
-  this = []
-  songs.each_with_index {|item,index| this << "#{index+ 1}. #{item}"}
-  puts this 
+  
+  songs.each_with_index {|item,index| puts "#{index+ 1}. #{item}"}
+  
 end 
 
 def exit_jukebox
